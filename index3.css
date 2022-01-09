@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 400px;
+  background-color: white;
+}
+.next {
+  color: black;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  margin: 10px;
+  border: 1px solid blue;
+  border-radius: 20px;
+}
+.next > a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+.head > p {
+  display: inline;
+}
+#h1 {
+  background-color: sandybrown;
+}
+#h3 {
+  background-color: white;
+}
+#h3 {
+  background-color: green;
+}
+.flag {
+  position: absolute;
+  top: 10px;
+  left: 290px;
+}
+.flag img {
+  width: 100px;
+}
+.sun {
+  position: relative;
+  left: 90%;
+  top: 80px;
+  animation: sun 50s linear infinite;
+}
+@keyframes sun {
+  100% {
+    transform: translateX(-800px);
+  }
+}
+.sun img {
+  width: 100px;
+}
+.sky {
+  background-image: url("sky.jpg");
+  position: absolute;
+  height: 100%;
+  display: block;
+  width: 100%;
+  background-repeat: repeat-x;
+}
+.city {
+  position: absolute;
+  top: 230px;
+  background-image: url("./city.png");
+  width: 500%;
+  height: 100%;
+  background-repeat: repeat-x;
+  animation: city 35s linear infinite;
+  z-index: 1;
+}
+@keyframes city {
+  100% {
+    transform: translateX(-3000px);
+  }
+}
+.road {
+  position: absolute;
+  top: 480px;
+  background-repeat: repeat-x;
+  animation: road 10s linear infinite;
+}
+@keyframes road {
+  100% {
+    transform: translateX(-3000px);
+  }
+}
+.car {
+  position: absolute;
+  top: 400px;
+  left: 300px;
+  z-index: 2;
+  transform: translateX(-50%);
+  animation: car 1s linear infinite;
+}
+@keyframes car {
+  0% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(-1px);
+  }
+}
+.wheel {
+  position: absolute;
+  top: 90px;
+}
+.wheel img {
+  width: 70px;
+  height: 70px;
+}
+
+.fwheel {
+  position: absolute;
+  left: 280px;
+  animation: wheel 1s linear infinite;
+}
+.bwheel {
+  position: absolute;
+  left: 35px;
+  animation: wheel 1s linear infinite;
+}
+@keyframes wheel {
+  100% {
+    transform: rotate(360deg);
+  }
+}

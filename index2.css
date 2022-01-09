@@ -1,0 +1,87 @@
+body {
+  background-color: rgb(171, 212, 87);
+}
+h2 {
+  text-align: center;
+}
+.box {
+  margin: 40px;
+  background-color: green;
+  height: 100px;
+  width: 100px;
+  margin-left: 500px;
+}
+.box1 {
+  height: 100px;
+  width: 100px;
+  /* transition-property: width;
+  transition-duration: 2s; */
+}
+.box1:hover {
+  width: 300px;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  transform-origin: center;
+}
+.box2 {
+  height: 100px;
+  width: 100px;
+  transition-property: width, height;
+  transition-duration: 4s, 4s;
+}
+.box2:hover {
+  width: 300px;
+  height: 300px;
+}
+.box3:hover {
+  width: 300px;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  transform-origin: center;
+}
+.box4:hover {
+  width: 300px;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  transform-origin: center;
+}
+.box5:hover {
+  width: 300px;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  transform-origin: center;
+}
+.box6:hover {
+  width: 300px;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  transform-origin: center;
+}
+.box7:hover {
+  width: 300px;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  transform-origin: center;
+}
+.next {
+  font-size: 22px;
+  text-align: center;
+}
+
+/*
+ .box1 {
+  animation-name: box1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes box1 {
+  from {
+    width: 100px;
+  }
+  to {
+    width: 300px;
+  }
+} 
+
+*/
